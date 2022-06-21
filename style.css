@@ -29,7 +29,7 @@ a{
     color: black;
 }
 /*header*/
-.menuFijo{
+header{
     background-color: #FFF9E6;
     font-size: 20px;
     font-weight: bold;
@@ -37,15 +37,11 @@ a{
 }
 
 /*enlaces superiores derechos*/
-nav ul.redesLista{
-
-
- 
+header ul.redesLista{
     display: flex;
     font-family: 'Cairo', sans-serif;
     font-weight: bolder;
-    font-size: large;
-          
+    font-size: large;          
 }
 ul.redesLista:last-child{
     margin-right: 45px;
@@ -61,17 +57,23 @@ img.redes{
 .redesLista li:first-child{
     margin-left: 94%;
 }
-div.p-2{
-    font-size: 26px;
-}
-div.p-2:last-of-type{
-    margin-right:30px;
-}
+
 ul.dropdown-menu{
     font-size: 26px;
 }
 
-  
+
+section.d-flex {
+    justify-content: space-between;
+}
+section.p-2{
+    display:flex;
+    flex-direction: row;
+    font-size: 26px;
+}
+a.ingreso{
+    margin-right: 10px;
+}
 /*menú desplegable izquierda*/
 
 button.dropown{
@@ -80,7 +82,7 @@ button.dropown{
     background-color: #FFF9E6;
     border-color: #ece7d6;
     margin-left: 25px;
-    margin-right: 1080px;
+
 }
 
 /*main*/
@@ -118,26 +120,23 @@ div.flexDiv{
     font-size: 20px;
     font-weight: bolder;
 }
-.divTitulo{
-    
-    width: 75%;
-    height: 395px;
-    margin: 0 auto;
-    background-image: url(./img/mainclemat.png);  
-
-
+.divTitulo img{
+   width: 100%;
+   height: 550px;
 }
 
 img.mainImg{
     width: 100px;
 }
+main{
+    font-weight: bolder;
+    text-align: center;
+}
 h1{
-    font-size: 46px;
+    font-size: 72px;
     font-weight: bolder;
 }
-.divTitulo h3{
-    font-weight: bold;
-}
+
 
 h4{
     font-weight: bold;
@@ -340,7 +339,9 @@ section.libros, section.productos{
             align-items: center;
   }
   
-  
+article.p-mobile{
+    display:none;
+}
 
 @media screen and (max-width: 768px) {
     body{
@@ -353,51 +354,45 @@ section.libros, section.productos{
         "main"
         ;
     }
+    header{
+        background-color: #B7AC72;
+    }
     img.mainImg{
         width: 100%;
         
     }
-    .redesLista li:first-child{
-        margin-left: 40%;
+    ul.redesLista{
+        display: flex;
+        justify-content: space-evenly;
     }
     button.dropown{
         margin-right: 80px;
     }
 
-   
-    main#Main{
-        grid-area: main;
-        display: flex;
-        flex-direction: row;  
-        display: grid;
-        grid-template-columns: 1fr 1fr;  
-        grid-template-rows: 1fr 1fr; 
-        grid-template-areas: 
-        "quienes producto"
-        "clases contacto";  
-        
+    article.p-mobile {
+            display: flex;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            flex-direction: column;
+            align-content: center;
+            margin-top: 120px;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            align-items: flex-start;
     }
-    main#main:first-child{
-        grid-area: quienes;
-        
-    }
-    main#main:nth-child(2){
-        grid-area: producto;
-        
-    }
-    main#main:nth-child(3){
-        grid-area: clases;
-        
-    }
-    main#main:last-child{
-        grid-area: contacto;
-        
-    }
+ 
 
     section.divTitulo{
-        grid-area: section;
-        display: none;
-    }    
+        display:none;
+    }
+
+
+    main{
+        background-image: url(img/mainIMG.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+   
     footer#pie{
         display: none;
     }
@@ -514,9 +509,11 @@ section.libros, section.productos{
     section.libros{
         display: none;
     }
-    section.productos{
+    section.productos {
+        margin-top: 15%;
         display: flex;
         justify-content: center;
+        height: 318px;
     }
 }
 
