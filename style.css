@@ -133,6 +133,7 @@ main{
     text-align: center;
 }
 h1{
+    
     font-size: 72px;
     font-weight: bolder;
 }
@@ -272,17 +273,29 @@ section.libros, section.productos{
   
   .mensuales {
     width: 50%;
+    font-size: 26px;
+    font-weight: bold;
     background-image: url(img/lasalablanca.png);
     background-repeat: no-repeat;
     background-size: cover;
-  }
+    display: flex;
+    align-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+}
   
-  .talleres {
+.talleres {
     width: 50%;
+    font-size: 26px;
+    font-weight: bold;
     background-image: url(img/letournispadel.png);
     background-repeat: no-repeat;
     background-size: cover;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
   /*contacto*/
 .bodyContacto {
     background-color: #fff9e6;
