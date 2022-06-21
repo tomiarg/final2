@@ -61,18 +61,17 @@ img.redes{
 .redesLista li:first-child{
     margin-left: 94%;
 }
+div.p-2{
+    font-size: 26px;
+}
 div.p-2:last-of-type{
     margin-right:30px;
 }
 ul.dropdown-menu{
     font-size: 26px;
 }
-.redesLista li:first-child {
-    margin-left: 94%;
-  }
-  div a.ingreso {
-    margin-left: 1080px;
-  }
+
+  
 /*menú desplegable izquierda*/
 
 button.dropown{
@@ -81,6 +80,7 @@ button.dropown{
     background-color: #FFF9E6;
     border-color: #ece7d6;
     margin-left: 25px;
+    margin-right: 1080px;
 }
 
 /*main*/
@@ -190,7 +190,70 @@ section.libros, section.productos{
 .card-img-top{
     height: 50%;
 }
-/*pestaña clases*/
+.card-text{
+    font-size: 20px;
+    font-weight: bold;
+}
+/*página Quienes Somos*/
+.bodyQuienes {
+    background-color: #A0B9F1;
+  }
+  
+  .quienesSomos {
+    width: 75%;
+    height: 400px;
+    margin: 0 auto;
+    background-image: url(img/yaniymari.jpeg);
+    color: white;
+    text-align: center;
+  }
+  
+  .proposito {
+    text-align: center;
+  }
+  
+  .quienesTitulo {
+    background-color: #A0B9F1;
+    width: 50%;
+    height: 24px;
+    margin: 0 auto;
+    margin-top: 3px;
+    font-size: 12px;
+    border-bottom: dotted 2px #B7AC72;
+    color: black;
+  }
+  
+  .quienesProfes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  
+  .nombresQuienes {
+    color: #B7AC72;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 10%;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  article p {
+    width: 50%;
+    margin: 0 auto;
+  }
+  /*pestaña clases*/
 .bodyClases {
     background-color: #DC632C;
   }
@@ -221,9 +284,8 @@ section.libros, section.productos{
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
   /*contacto*/
-  .bodyContacto {
+.bodyContacto {
     background-color: #fff9e6;
   }
   
@@ -278,6 +340,8 @@ section.libros, section.productos{
             align-items: center;
   }
   
+  
+
 @media screen and (max-width: 768px) {
     body{
         width: 100%;
@@ -295,6 +359,9 @@ section.libros, section.productos{
     }
     .redesLista li:first-child{
         margin-left: 40%;
+    }
+    button.dropown{
+        margin-right: 80px;
     }
 
    
