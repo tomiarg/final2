@@ -67,6 +67,12 @@ div.p-2:last-of-type{
 ul.dropdown-menu{
     font-size: 26px;
 }
+.redesLista li:first-child {
+    margin-left: 94%;
+  }
+  div a.ingreso {
+    margin-left: 1080px;
+  }
 /*menú desplegable izquierda*/
 
 button.dropown{
@@ -184,7 +190,94 @@ section.libros, section.productos{
 .card-img-top{
     height: 50%;
 }
-
+/*pestaña clases*/
+.bodyClases {
+    background-color: #DC632C;
+  }
+  
+  .clases {
+    width: 75%;
+    height: 500px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  
+  .mensuales {
+    width: 50%;
+    background-image: url(img/lasalablanca.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .talleres {
+    width: 50%;
+    background-image: url(img/letournispadel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /*contacto*/
+  .bodyContacto {
+    background-color: #fff9e6;
+  }
+  
+  .contactoArt {
+    width: 75%;
+    height: 400px;
+    margin: 0 auto;
+  }
+  
+  .espacioInput {
+    width: 60%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .consultaInput {
+    width: 60%;
+    height: 100px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .enviarInput {
+    width: 5%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .mailWhats {
+    width: 40%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
 @media screen and (max-width: 768px) {
     body{
         width: 100%;
