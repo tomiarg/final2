@@ -12,7 +12,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #B7AC72;
-    font-family: 'Square Peg', cursive; 
+    font-family: 'Mulish', sans-serif; 
     margin: 0 auto;
     
 }
@@ -37,25 +37,19 @@ header{
 }
 
 /*enlaces superiores derechos*/
-header ul.redesLista{
+ul.redesLista{
     display: flex;
     font-family: 'Cairo', sans-serif;
     font-weight: bolder;
-    font-size: large;          
+    font-size: large;    
+    justify-content: flex-end;      
 }
-ul.redesLista:last-child{
-    margin-right: 45px;
-}
+
 
 img.redes{
     width: 30px;
     padding-right: 4px;
     margin-right: 4px;
-}
-
-
-.redesLista li:first-child{
-    margin-left: 94%;
 }
 
 ul.dropdown-menu{
@@ -355,8 +349,51 @@ section.libros, section.productos{
 article.p-mobile{
     display:none;
 }
+button.mobileCanvas{
+   display: none;
+}
 
 @media screen and (max-width: 768px) {
+    h1{
+        color: white;
+    }
+    h4{
+        display:none;
+    }
+    button.mobileCanvas{
+        display:block;
+    }
+    hr {
+        color: white;
+        height: 5px;
+        background-color: white;
+        opacity: 1;
+      }
+    .btn-primary {
+    
+    font-weight: bold;
+     --bs-btn-color: #00000;
+     --bs-btn-bg: #fff9e6;
+    --bs-btn-border-color: #fff9e6;
+    --bs-btn-hover-bg: #fff9e6;
+    --bs-btn-hover-border-color: #fff9e6;
+    --bs-btn-active-bg: #fff9e6;
+    --bs-btn-focus-shadow-rgb: 255,249,230;
+    }
+    h5.offcanvas-title{
+        color: black;
+        font-size: 40px;
+    }
+    .offcanvas-title li{
+        border-bottom: 3px solid black;
+
+    }
+    .offcanvas.offcanvas-start{
+        background-color: #A0B9F1;
+    }
+    button img{
+        width: 100px;
+    }
     body{
         width: 100%;
         display: grid;
@@ -367,19 +404,24 @@ article.p-mobile{
         "main"
         ;
     }
-    header{
-        background-color: #B7AC72;
-    }
-    img.mainImg{
-        width: 100%;
+    header{ 
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
         
     }
-    ul.redesLista{
+    ul.redesListaCanvas{
         display: flex;
         justify-content: space-evenly;
     }
+    ul.redesLista{
+        display: none;
+    }
     button.dropown{
-        margin-right: 80px;
+        display: none;
     }
 
     article.p-mobile {
@@ -391,7 +433,7 @@ article.p-mobile{
             margin-top: 120px;
             flex-wrap: nowrap;
             justify-content: flex-end;
-            align-items: flex-start;
+            align-items: center
     }
  
 
@@ -401,7 +443,8 @@ article.p-mobile{
 
 
     main{
-        background-image: url(img/mainIMG.jpg);
+        height: 100vh;
+        background-image: url(img/posibleMainimg.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -409,14 +452,9 @@ article.p-mobile{
     footer#pie{
         display: none;
     }
-    ul.dropDown{
-        grid-area: drop;
-        margin-top: 2px;
-        margin-bottom: 1px;
-        display: none;
-    }
+
     nav.menuFijo{
-        grid-area: header;
+        display:none;
 
     }
     section.mainLinks{

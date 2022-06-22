@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="style.css">
    
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,800;1,400;1,600;1,700&display=swap');
  </style>
 </head>
 
@@ -29,7 +29,7 @@
     <ul class="redesLista">
       <li><a href="https://www.instagram.com/p/CaUgu_6rD2r/?utm_source=ig_web_copy_link" target="_blank"><img src="./img/instagram.png" alt="instagram" class="redes" ></a></span></li>
       <li><a href="https://www.twitter.com" target="_blank"><img src="./img/twitter.png" alt="twitter" class="redes"></a></span></li>
-      <li><a href="https://www.twitter.com" target="_blank"><img src="img/facebook.png" alt="facebok" class="redes"></a></span></li>
+      <li><a href="https://www.twitter.com" target="_blank"><img src="img/facebook.png" alt="facebok" class="redes"></a></li>
     </ul> 
    </div> 
         <!--Bootstrap dropdown-->
@@ -41,7 +41,7 @@
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
               <li><a href="clases.html" class="dropdown-item" type="button">clases</a></li>
-              <li><a href="quienes.html" class="dropdown-item" type="button">quienes</a></li>
+              <li><a href="quienes.html" class="dropdown-item" type="button">quiénes somos</a></li>
               <li><a href="productos.html" class="dropdown-item" type="button">produtos</a></li>
               <li><a href="contacto.html"class="dropdown-item" type="button">contacto</a></li>
             </ul>
@@ -49,23 +49,69 @@
          <section class="p-2">          
           <div><a class="ingreso" href="XXXXXX">ingreso</a></div>
           <div><a href="XXXXXX">registrarse</a></div>
-        </ul>
-        </div>
         </section>
        </nav>
+   <button class="btn btn-primary mobileCanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img src="img/logoClemat2.jpeg" alt="logo"></button>
+
+         <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+         <div class="offcanvas-header">
+         <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+          <ul>
+          <li><a href="clases.html" class="dropdown-item" type="button">clases</a></li>
+          <li><a href="quienes.html" class="dropdown-item" type="button">quiénes somos</a></li>
+          <li><a href="productos.html" class="dropdown-item" type="button">produtos</a></li>
+          <li><a href="contacto.html"class="dropdown-item" type="button">contacto</a></li>
+          <li class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+             registrarse
+            </button>
+            <form class="dropdown-menu p-4">
+              <div class="mb-3">
+                <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+              </div>
+              <div class="mb-3">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                  <label class="form-check-label" for="dropdownCheck2">
+                    Remember me
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+         </li>
+        </ul>
+        </h5>
+         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+    <div class="offcanvas-body">
+      
+      <ul class="redesListaCanvas">
+        <li><a href="https://www.instagram.com/p/CaUgu_6rD2r/?utm_source=ig_web_copy_link" target="_blank"><img src="./img/instagram.png" alt="instagram" class="redes" ></a></span></li>
+        <li><a href="https://www.twitter.com" target="_blank"><img src="./img/twitter.png" alt="twitter" class="redes"></a></span></li>
+        <li><a href="https://www.twitter.com" target="_blank"><img src="img/facebook.png" alt="facebok" class="redes"></a></span></li>
+      </ul> 
+  </div>
+ </div>
      </header>
      <main>
       <hr>
       <h1>Clemat</h1>
       <h4>Yoga en familia</h4>
       <hr>
+     </main>
       <article class="p-mobile">
         <h3>Yoga & mindfullness para niños</h3>
         <h3>estimulación temprana</h3>
         <h3>aprendizaje holístico</h3>
         <h3>yoga en familia</h3>
-      </article>
-     </main>
+     </article>
+
 
      <!--el logo me gustaría que sea clickeable y vaya sobre un video -->
      <section class="divTitulo">
